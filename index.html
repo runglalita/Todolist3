@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ตลาดเกษตรกรบ้านลีเล็ด</title>
+  <meta name="description" content="ระบบซื้อขายสินค้าเกษตรออนไลน์ กลุ่มเกษตรกรชุมชนบ้านลีเล็ด จังหวัดสุราษฎร์ธานี">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function () {
+      var t = 'light';
+      try { t = localStorage.getItem('lileud_theme') || 'light'; } catch (e) {}
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+<body>
+  <div id="appLoad" class="app-loading">
+    <div class="brand-mark">🌾</div>
+    <div class="app-loading-text">กำลังโหลด... ตลาดเกษตรกรบ้านลีเล็ด</div>
+  </div>
+
+  <header id="siteHeader" class="site-header"></header>
+  <main id="view" class="view-root"></main>
+  <footer id="siteFooter" class="site-footer"></footer>
+  <nav id="mobileNav" class="mobile-nav" aria-label="เมนูมือถือ"></nav>
+  <div id="mobileDrawer" class="mobile-drawer"></div>
+  <div id="modalRoot"></div>
+  <div id="toastRoot" class="toast-root" aria-live="polite"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/views-site.js"></script>
+  <script src="js/views-auth.js"></script>
+  <script src="js/views-shop.js"></script>
+  <script src="js/views-dash.js"></script>
+  <script src="js/views-mgmt.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
